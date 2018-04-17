@@ -3,7 +3,7 @@
 var oslo = {lat: 59.91588, lng: 10.7674953};
 
 var parks = {
-	Vesletjern: {lat: 59.960181, lng: 10.861639},
+	Vesletjern: {lat: 59.960303, lng: 10.862690},
 	Holmenkollen: {lat: 59.9640583, lng: 10.6675896},
 	Sognsvann: {lat: 59.9701258, lng: 10.7305066},
 	Skullerud: {lat: 59.8628795, lng: 10.8475724}
@@ -93,6 +93,7 @@ function initMap() {
 			title: park
 		});
         marker.addListener('click', function() {
+            document.location = 'detail.png';
         });
 	}
 
