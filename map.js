@@ -79,10 +79,10 @@ function initMap() {
 	};
 
 	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 11
-		,center: oslo
-		//zoom: 16
-		//,center: parks.Vesletjern
+		//zoom: 11
+		//,center: oslo
+		zoom: 16
+		,center: parks.Vesletjern
 		,styles: style
 	});
 
@@ -97,10 +97,10 @@ function initMap() {
 	}
 
     var imageBounds = {
-        north: 59.961581,
-        south: 59.958081,
-        east: 10.866539,
-        west: 10.855439
+        north: 59.961481,
+        south: 59.958181,
+        east: 10.866039,
+        west: 10.856539
     };
 
 	var overlayImage = 'vesletjern.png';
