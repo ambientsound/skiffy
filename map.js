@@ -81,6 +81,8 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 11
 		,center: oslo
+		//zoom: 16
+		//,center: parks.Vesletjern
 		,styles: style
 	});
 
@@ -94,13 +96,17 @@ function initMap() {
         });
 	}
 
-	var bounds = new google.maps.LatLngBounds(
-			new google.maps.LatLng(59.9590291, 10.8634601),
-			new google.maps.LatLng(59.9690291, 10.8834601));
+    var imageBounds = {
+        north: 59.961581,
+        south: 59.958081,
+        east: 10.866539,
+        west: 10.855439
+    };
 
-	var srcImage = 'https://github.com/ambientsound/skiffy/raw/master/rocket.png';
+	var overlayImage = 'vesletjern.png';
 
 	// The custom Overlay object contains the image,
 	// the bounds of the image, and a reference to the map.
-	overlay = new VesletjernOverlay(bounds, srcImage, map);
+	overlay = new google.maps.GroundOverlay(overlayImage, imageBounds);
+    overlay.setMap(map);
 }
