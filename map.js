@@ -79,10 +79,10 @@ function initMap() {
 	};
 
 	var map = new google.maps.Map(document.getElementById('map'), {
-		//zoom: 11
-		//,center: oslo
-		zoom: 16
-		,center: parks.Vesletjern
+		zoom: 11
+		,center: oslo
+		//zoom: 16
+		//,center: parks.Vesletjern
 		,styles: style
 	});
 
