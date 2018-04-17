@@ -81,7 +81,7 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 11
 		,center: oslo
-		//,styles: style
+		,styles: style
 	});
 
 	for (var park in parks) {
